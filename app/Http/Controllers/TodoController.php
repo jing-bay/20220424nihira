@@ -15,14 +15,12 @@ class TodoController extends Controller
     }
     public function create(TodoRequest $request)
     {
-        $this->validate($request, Todo::$rules);
         $form = $request->all();
         Todo::create($form);
         return redirect('/');
     }
     public function update(TodoRequest $request)
     {
-        $this->validate($request, Todo::$rules);
         $form = $request->all();
         unset($form['_token']);
         Todo::where('id', $request->id)->update($form);

@@ -25,7 +25,7 @@
 
       <form action="/todo/create" method="POST">
         @csrf
-        <input type="text" name="newtask">
+        <input type="text" name="content">
         <input type="submit" value="追加">
       </form>
 
@@ -38,26 +38,26 @@
         </tr>
         <tr>
           @foreach($items as $item)
-          <td>
-          {{$item->updated_at}}
-          </td>
           <form action="/todo/update" method="POST">
-            @csrf
+          @csrf
             <td>
-              <input type="text" name="todolist" value="{{$item->content}}">
+            {{$item->updated_at}}
             </td>
             <td>
-              <input type="submit" name="update" value="更新">
+              <input type="text" name="content" value="{{$item->content}}">
+            </td>
+            <td>
+              <input type="submit" value="更新">
             </td>
           </form>
           <form action="/todo/delete" method="POST">
             @csrf
             <td>
-              <input type="submit" name="delete" value="削除">
+              <input type="submit" value="削除">
             </td>
           </form>
-          @endforeach
         </tr>
+        @endforeach
       </table>
 
 
