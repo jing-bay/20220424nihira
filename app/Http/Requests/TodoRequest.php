@@ -24,15 +24,15 @@ class TodoRequest extends FormRequest
     public function rules()
     {
         return [
-            'content' => 'required|string|max:20'
+            'newtask' => 'required|string|max:20'
         ];
     }
 
     public function messages()
     {
         return [
-            'content.required' => '入力してください',
-            'content.max' => '20字以内で入力してください',
+            'newtask.required' => '入力してください',
+            'newtask.max' => '20字以内で入力してください',
         ];
     }
 }
