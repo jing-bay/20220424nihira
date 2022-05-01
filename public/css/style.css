@@ -1,8 +1,133 @@
 @charset "utf-8";
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
 
 body {
   height: 100vh;
   width: 100vw;
   position: relative;
   background-color: #2d197c;
+  display: flex;
+  align-items: center;
+}
+
+.card{
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  width: 50%;
+  
+}
+
+.title{
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+
+.addtodo{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.addtodo_content{
+  width: 80%;
+  height: 35px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+}
+
+.addtodo_content:focus{
+  outline: none;
+}
+
+.addbtn{
+  background-color: white;
+  outline: none;
+  width: 60px;
+  height: 38px;
+  border: 2px solid #ff1493;
+  color: #ff1493;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.addbtn:hover {
+  background: #ff1493;
+  color: #fff;
+}
+
+.todolists{
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+td{
+  height: 50px;
+}
+
+.todolists_ttl{
+  height: 50px;
+}
+
+.todolists_update{
+  width: 35%;
+}
+
+.todolists_content{
+  width: 95%;
+  height: 25px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+}
+
+.todolists_content:focus {
+  outline: none;
+}
+
+.updatebtn {
+  background-color: white;
+  outline: none;
+  width: 60px;
+  height: 38px;
+  border: 2px solid #ffa500;
+  color: #ffa500;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.updatebtn:hover {
+  background: #ffa500;
+  color: #fff;
+}
+
+.deletebtn {
+  background-color: white;
+  outline: none;
+  width: 60px;
+  height: 38px;
+  border: 2px solid #00bfff;
+  color: #00bfff;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.deletebtn:hover {
+  background: #00bfff;
+  color: #fff;
 }
