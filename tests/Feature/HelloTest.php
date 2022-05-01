@@ -17,7 +17,7 @@ class HelloTest extends TestCase
             'content'=>'aaa',
         ]);
         $this->assertDatabaseHas('todos',[
-            'content'=>'aaa',
+            'content'=>'aaa'
         ]);
     }
 }
