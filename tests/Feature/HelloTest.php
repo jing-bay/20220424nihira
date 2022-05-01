@@ -15,13 +15,9 @@ class HelloTest extends TestCase
     {
         Todo::factory()->create([
             'content'=>'aaa',
-            'created_at'=>'2222-22-22 00:00:00',
-            'updated_at'=>'2222-22-22 00:00:00'
         ]);
         $this->assertDatabaseHas('todos',[
             'content'=>'aaa',
-            'created_at'=>'2222-22-22 00:00:00',
-            'updated_at'=>'2222-22-22 00:00:00'
         ]);
     }
 }
